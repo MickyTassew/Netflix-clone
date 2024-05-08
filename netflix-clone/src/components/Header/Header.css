@@ -1,0 +1,55 @@
+.header_outer_container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    height: 10vh;
+    color: white;
+    transition: all 0.5s;
+    transition-timing-function: ease-in;
+    z-index: 1;
+}
+
+.header_scrolled {
+    background-color: rgb(20, 20, 20);
+}
+
+.header_container{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_left ul {
+    width: 140%;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    list-style: none;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.header-right ul {
+    width: 140%;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    list-style: none;
+    justify-content: space-between;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 868px) {
+    .header_left ul li:not(:first-child) {
+        display: none; /* Hide navigation links except for the first one (Netflix logo) */
+    }
+
+    .header-right ul {
+        left: 5px;
+    }
+}
