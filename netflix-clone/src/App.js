@@ -4,6 +4,7 @@ import Home from './pages/Home/Home';
 import Row from './components/Row/Row';
 import Banner from './components/Banner/Banner';
 import { requests } from './utils/requests';
+import Footer from './components/Footer/Footer';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
       <Row title="Horror Movies" fetchUrl={requests.fetchHorrorMovies}/>
       <Row title="Romance Movies" fetchUrl={requests.fetchRomanceMovies}/>
       <Row title="Documentaries" fetchUrl={requests.fetchDocumentaries}/>
+      <Footer />
 
 
     </div>
