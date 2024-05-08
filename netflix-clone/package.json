@@ -1,5 +1,5 @@
 {
-  "homepage": "https://MickyTassew.github.io/Netflix-clone"
+  "homepage": "https://MickyTassew.github.io/Netflix-clone",
   "name": "netflix-clone",
   "version": "0.1.0",
   "private": true,
@@ -23,7 +23,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy": "nmp run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -48,6 +48,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "github-pages": "^3.0.2"
   }
 }
